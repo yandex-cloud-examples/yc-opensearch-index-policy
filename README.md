@@ -1,5 +1,3 @@
-# Название сценария
+# Настройка политики индексов в Yandex Managed Service for OpenSearch
 
-Описание сценария и инструкция по его применению.
-
-Для практических руководств обязательна ссылка на документацию.
+С помощью [политик](https://yandex.cloud/ru/docs/managed-opensearch/concepts/index-policies.md) вы можете автоматически выполнять определенные операции с индексами в базе данных [Managed Service for OpenSearch](https://yandex.cloud/ru/docs/managed-opensearch). Например, чтобы повысить безопасность и доступность данных, вы можете установить политику, которая будет создавать новый индекс через указанное количество дней или когда размер индекса превысит указанное значение. Подготовка инфраструктуры для Managed Service for OpenSearch через Terraform описана в [практическом руководстве](https://yandex.cloud/ru/docs/managed-opensearch/tutorials/opensearch-index-policy), необходимый для настройки конфигурационный файл [opensearch-index-policy.tf](opensearch-index-policy.tf) расположен в этом репозитории.
